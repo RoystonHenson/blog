@@ -9,7 +9,7 @@ class ArticlesController < ApplicationController
   end
 
   def new
-    @aarticel = Article.new
+    @article = Article.new
   end
 
   def create
@@ -19,6 +19,8 @@ class ArticlesController < ApplicationController
       redirect_to @article
     else
       render 'new'
+    end
+
   end
 
   private
